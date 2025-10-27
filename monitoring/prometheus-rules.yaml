@@ -1,0 +1,5 @@
+groups:
+- name: example
+  rules:
+  - alert: HighErrorRate
+    expr: rate(http_requests_total[5m]) > 0.05
